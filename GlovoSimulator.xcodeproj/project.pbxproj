@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E4226370974E542E9E8CBF5 /* Pods_GlovoSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688334152A00ED0C9C7951B2 /* Pods_GlovoSimulator.framework */; };
+		820A019821920F6400C51CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A019721920F6400C51CF7 /* AppDelegate.swift */; };
+		820A019A21920F6400C51CF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A019921920F6400C51CF7 /* ViewController.swift */; };
+		820A019D21920F6400C51CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820A019B21920F6400C51CF7 /* Main.storyboard */; };
+		820A019F21920F6500C51CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820A019E21920F6500C51CF7 /* Assets.xcassets */; };
+		820A01A221920F6500C51CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820A01A021920F6500C51CF7 /* LaunchScreen.storyboard */; };
+		821B65502192F8FA00E03855 /* JS_HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B654E2192F8FA00E03855 /* JS_HomeController.swift */; };
+		821B65512192F8FA00E03855 /* JS_HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821B654F2192F8FA00E03855 /* JS_HomeController.xib */; };
+		821B65552193053B00E03855 /* JS_MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821B65542193053B00E03855 /* JS_MenuViewController.xib */; };
+		821B655921931BD900E03855 /* JS_PresentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B655821931BD900E03855 /* JS_PresentAnimation.swift */; };
+		822DE502219219CE00D6AE32 /* JS_BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DE501219219CE00D6AE32 /* JS_BaseNavigationController.swift */; };
+		822DE50D21921CC500D6AE32 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DE50C21921CC500D6AE32 /* Common.swift */; };
+		822DE5132192394E00D6AE32 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DE5122192394E00D6AE32 /* UIColor-Extension.swift */; };
+		822DE5162192428400D6AE32 /* JS_HomeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DE5142192428400D6AE32 /* JS_HomeContentCell.swift */; };
+		822DE5172192428400D6AE32 /* JS_HomeContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822DE5152192428400D6AE32 /* JS_HomeContentCell.xib */; };
+		822DE5192192CB4100D6AE32 /* JS_RestauranteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DE5182192CB4100D6AE32 /* JS_RestauranteModel.swift */; };
+		822DE51F2192E68D00D6AE32 /* JS_MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DE51E2192E68D00D6AE32 /* JS_MenuViewController.swift */; };
+		822DE5212192E72A00D6AE32 /* JS_FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DE5202192E72A00D6AE32 /* JS_FooterView.swift */; };
+		827D8D73219340E2009666BE /* JS_MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D72219340E2009666BE /* JS_MenuModel.swift */; };
+		827D8D752193444F009666BE /* JS_MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D742193444F009666BE /* JS_MenuItemCell.swift */; };
+		827D8D772193465F009666BE /* JS_MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827D8D762193465F009666BE /* JS_MenuItemCell.xib */; };
+		827D8D7921934C8F009666BE /* JS_MenuTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D7821934C8F009666BE /* JS_MenuTableHeaderView.swift */; };
+		827D8D7B21934C9A009666BE /* JS_MenuTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827D8D7A21934C9A009666BE /* JS_MenuTableHeaderView.xib */; };
+		827D8D7D21935233009666BE /* JS_SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D7C21935233009666BE /* JS_SectionHeaderView.swift */; };
+		827D8D7F21937C6A009666BE /* JS_SubMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D7E21937C6A009666BE /* JS_SubMenuController.swift */; };
+		827D8D8121938122009666BE /* JS_SubMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D8021938122009666BE /* JS_SubMenuModel.swift */; };
+		827D8D842193A351009666BE /* JS_SubMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D822193A351009666BE /* JS_SubMenuCell.swift */; };
+		827D8D852193A351009666BE /* JS_SubMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827D8D832193A351009666BE /* JS_SubMenuCell.xib */; };
+		827D8D872193ACCE009666BE /* JS_SubMenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D862193ACCE009666BE /* JS_SubMenuSection.swift */; };
+		827D8D892193ACE4009666BE /* JS_SubMenuSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827D8D882193ACE4009666BE /* JS_SubMenuSection.xib */; };
+		827D8D8C21945D92009666BE /* JS_MenuSelectedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D8A21945D92009666BE /* JS_MenuSelectedCell.swift */; };
+		827D8D8D21945D92009666BE /* JS_MenuSelectedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827D8D8B21945D92009666BE /* JS_MenuSelectedCell.xib */; };
+		827D8D8F21947F15009666BE /* QRCodeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D8E21947F15009666BE /* QRCodeTool.swift */; };
+		827D8D9221947FBC009666BE /* WHQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D9021947FBC009666BE /* WHQRViewController.swift */; };
+		827D8D9321947FBC009666BE /* WHQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827D8D9121947FBC009666BE /* WHQRViewController.xib */; };
+		827D8D9521948090009666BE /* QRClearImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D9421948090009666BE /* QRClearImage.swift */; };
+		827D8D972194839D009666BE /* JS_WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D8D962194839D009666BE /* JS_WelcomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		688334152A00ED0C9C7951B2 /* Pods_GlovoSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlovoSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D28E60952E7E7E40B8F4B58 /* Pods-GlovoSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoSimulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoSimulator/Pods-GlovoSimulator.debug.xcconfig"; sourceTree = "<group>"; };
+		820A019421920F6400C51CF7 /* GlovoSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovoSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		820A019721920F6400C51CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		820A019921920F6400C51CF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		820A019C21920F6400C51CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		820A019E21920F6500C51CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		820A01A121920F6500C51CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		820A01A321920F6500C51CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		821B654E2192F8FA00E03855 /* JS_HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_HomeController.swift; sourceTree = "<group>"; };
+		821B654F2192F8FA00E03855 /* JS_HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JS_HomeController.xib; sourceTree = "<group>"; };
+		821B65542193053B00E03855 /* JS_MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JS_MenuViewController.xib; sourceTree = "<group>"; };
+		821B655821931BD900E03855 /* JS_PresentAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_PresentAnimation.swift; sourceTree = "<group>"; };
+		822DE501219219CE00D6AE32 /* JS_BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_BaseNavigationController.swift; sourceTree = "<group>"; };
+		822DE50C21921CC500D6AE32 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		822DE5122192394E00D6AE32 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		822DE5142192428400D6AE32 /* JS_HomeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_HomeContentCell.swift; sourceTree = "<group>"; };
+		822DE5152192428400D6AE32 /* JS_HomeContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JS_HomeContentCell.xib; sourceTree = "<group>"; };
+		822DE5182192CB4100D6AE32 /* JS_RestauranteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_RestauranteModel.swift; sourceTree = "<group>"; };
+		822DE51E2192E68D00D6AE32 /* JS_MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_MenuViewController.swift; sourceTree = "<group>"; };
+		822DE5202192E72A00D6AE32 /* JS_FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_FooterView.swift; sourceTree = "<group>"; };
+		827D8D72219340E2009666BE /* JS_MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_MenuModel.swift; sourceTree = "<group>"; };
+		827D8D742193444F009666BE /* JS_MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_MenuItemCell.swift; sourceTree = "<group>"; };
+		827D8D762193465F009666BE /* JS_MenuItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JS_MenuItemCell.xib; sourceTree = "<group>"; };
+		827D8D7821934C8F009666BE /* JS_MenuTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_MenuTableHeaderView.swift; sourceTree = "<group>"; };
+		827D8D7A21934C9A009666BE /* JS_MenuTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JS_MenuTableHeaderView.xib; sourceTree = "<group>"; };
+		827D8D7C21935233009666BE /* JS_SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_SectionHeaderView.swift; sourceTree = "<group>"; };
+		827D8D7E21937C6A009666BE /* JS_SubMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_SubMenuController.swift; sourceTree = "<group>"; };
+		827D8D8021938122009666BE /* JS_SubMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_SubMenuModel.swift; sourceTree = "<group>"; };
+		827D8D822193A351009666BE /* JS_SubMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_SubMenuCell.swift; sourceTree = "<group>"; };
+		827D8D832193A351009666BE /* JS_SubMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JS_SubMenuCell.xib; sourceTree = "<group>"; };
+		827D8D862193ACCE009666BE /* JS_SubMenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_SubMenuSection.swift; sourceTree = "<group>"; };
+		827D8D882193ACE4009666BE /* JS_SubMenuSection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JS_SubMenuSection.xib; sourceTree = "<group>"; };
+		827D8D8A21945D92009666BE /* JS_MenuSelectedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_MenuSelectedCell.swift; sourceTree = "<group>"; };
+		827D8D8B21945D92009666BE /* JS_MenuSelectedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JS_MenuSelectedCell.xib; sourceTree = "<group>"; };
+		827D8D8E21947F15009666BE /* QRCodeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeTool.swift; sourceTree = "<group>"; };
+		827D8D9021947FBC009666BE /* WHQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WHQRViewController.swift; sourceTree = "<group>"; };
+		827D8D9121947FBC009666BE /* WHQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHQRViewController.xib; sourceTree = "<group>"; };
+		827D8D9421948090009666BE /* QRClearImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRClearImage.swift; sourceTree = "<group>"; };
+		827D8D962194839D009666BE /* JS_WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_WelcomeView.swift; sourceTree = "<group>"; };
+		E404F3DC798CED9718187E82 /* Pods-GlovoSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoSimulator/Pods-GlovoSimulator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		820A019121920F6400C51CF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4226370974E542E9E8CBF5 /* Pods_GlovoSimulator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		133966C5F2570DF780A526C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				688334152A00ED0C9C7951B2 /* Pods_GlovoSimulator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D40244DAC84A628DF004878 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D28E60952E7E7E40B8F4B58 /* Pods-GlovoSimulator.debug.xcconfig */,
+				E404F3DC798CED9718187E82 /* Pods-GlovoSimulator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		820A018B21920F6400C51CF7 = {
+			isa = PBXGroup;
+			children = (
+				820A019621920F6400C51CF7 /* GlovoSimulator */,
+				820A019521920F6400C51CF7 /* Products */,
+				3D40244DAC84A628DF004878 /* Pods */,
+				133966C5F2570DF780A526C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		820A019521920F6400C51CF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				820A019421920F6400C51CF7 /* GlovoSimulator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		820A019621920F6400C51CF7 /* GlovoSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				822DE4F82192199B00D6AE32 /* Classes */,
+				820A019721920F6400C51CF7 /* AppDelegate.swift */,
+				820A019921920F6400C51CF7 /* ViewController.swift */,
+				820A019B21920F6400C51CF7 /* Main.storyboard */,
+				820A019E21920F6500C51CF7 /* Assets.xcassets */,
+				820A01A021920F6500C51CF7 /* LaunchScreen.storyboard */,
+				820A01A321920F6500C51CF7 /* Info.plist */,
+			);
+			path = GlovoSimulator;
+			sourceTree = "<group>";
+		};
+		822DE4F82192199B00D6AE32 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				822DE4F92192199B00D6AE32 /* Home */,
+				822DE51A2192E67000D6AE32 /* Menu */,
+				822DE50821921C9F00D6AE32 /* Others */,
+				822DE4FD2192199B00D6AE32 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		822DE4F92192199B00D6AE32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				822DE4FA2192199B00D6AE32 /* Controller */,
+				822DE4FB2192199B00D6AE32 /* Model */,
+				822DE4FC2192199B00D6AE32 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		822DE4FA2192199B00D6AE32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				821B654E2192F8FA00E03855 /* JS_HomeController.swift */,
+				821B654F2192F8FA00E03855 /* JS_HomeController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		822DE4FB2192199B00D6AE32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				822DE5182192CB4100D6AE32 /* JS_RestauranteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		822DE4FC2192199B00D6AE32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				822DE5142192428400D6AE32 /* JS_HomeContentCell.swift */,
+				822DE5152192428400D6AE32 /* JS_HomeContentCell.xib */,
+				822DE5202192E72A00D6AE32 /* JS_FooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		822DE4FD2192199B00D6AE32 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				822DE4FE2192199B00D6AE32 /* Controller */,
+				822DE4FF2192199B00D6AE32 /* Model */,
+				822DE5002192199B00D6AE32 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		822DE4FE2192199B00D6AE32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				827D8D9021947FBC009666BE /* WHQRViewController.swift */,
+				827D8D9121947FBC009666BE /* WHQRViewController.xib */,
+				822DE501219219CE00D6AE32 /* JS_BaseNavigationController.swift */,
+				827D8D962194839D009666BE /* JS_WelcomeView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		822DE4FF2192199B00D6AE32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		822DE5002192199B00D6AE32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		822DE50821921C9F00D6AE32 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				822DE50B21921CB900D6AE32 /* Tools */,
+				822DE50A21921C9F00D6AE32 /* Commun */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		822DE50A21921C9F00D6AE32 /* Commun */ = {
+			isa = PBXGroup;
+			children = (
+				822DE50C21921CC500D6AE32 /* Common.swift */,
+			);
+			path = Commun;
+			sourceTree = "<group>";
+		};
+		822DE50B21921CB900D6AE32 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				827D8D9421948090009666BE /* QRClearImage.swift */,
+				827D8D8E21947F15009666BE /* QRCodeTool.swift */,
+				822DE5122192394E00D6AE32 /* UIColor-Extension.swift */,
+				821B655821931BD900E03855 /* JS_PresentAnimation.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		822DE51A2192E67000D6AE32 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				822DE51B2192E67000D6AE32 /* Controller */,
+				822DE51C2192E67000D6AE32 /* Model */,
+				822DE51D2192E67000D6AE32 /* View */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		822DE51B2192E67000D6AE32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				822DE51E2192E68D00D6AE32 /* JS_MenuViewController.swift */,
+				821B65542193053B00E03855 /* JS_MenuViewController.xib */,
+				827D8D7E21937C6A009666BE /* JS_SubMenuController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		822DE51C2192E67000D6AE32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				827D8D72219340E2009666BE /* JS_MenuModel.swift */,
+				827D8D8021938122009666BE /* JS_SubMenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		822DE51D2192E67000D6AE32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				827D8D742193444F009666BE /* JS_MenuItemCell.swift */,
+				827D8D762193465F009666BE /* JS_MenuItemCell.xib */,
+				827D8D7821934C8F009666BE /* JS_MenuTableHeaderView.swift */,
+				827D8D7A21934C9A009666BE /* JS_MenuTableHeaderView.xib */,
+				827D8D7C21935233009666BE /* JS_SectionHeaderView.swift */,
+				827D8D822193A351009666BE /* JS_SubMenuCell.swift */,
+				827D8D832193A351009666BE /* JS_SubMenuCell.xib */,
+				827D8D862193ACCE009666BE /* JS_SubMenuSection.swift */,
+				827D8D882193ACE4009666BE /* JS_SubMenuSection.xib */,
+				827D8D8A21945D92009666BE /* JS_MenuSelectedCell.swift */,
+				827D8D8B21945D92009666BE /* JS_MenuSelectedCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		820A019321920F6400C51CF7 /* GlovoSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820A01A621920F6500C51CF7 /* Build configuration list for PBXNativeTarget "GlovoSimulator" */;
+			buildPhases = (
+				2D06C58B302F1E15B469A292 /* [CP] Check Pods Manifest.lock */,
+				820A019021920F6400C51CF7 /* Sources */,
+				820A019121920F6400C51CF7 /* Frameworks */,
+				820A019221920F6400C51CF7 /* Resources */,
+				992263300E71D0D7F1E28CAD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlovoSimulator;
+			productName = GlovoSimulator;
+			productReference = 820A019421920F6400C51CF7 /* GlovoSimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		820A018C21920F6400C51CF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JS_;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = JS_Coder;
+				TargetAttributes = {
+					820A019321920F6400C51CF7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 820A018F21920F6400C51CF7 /* Build configuration list for PBXProject "GlovoSimulator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 820A018B21920F6400C51CF7;
+			productRefGroup = 820A019521920F6400C51CF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				820A019321920F6400C51CF7 /* GlovoSimulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		820A019221920F6400C51CF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827D8D892193ACE4009666BE /* JS_SubMenuSection.xib in Resources */,
+				827D8D7B21934C9A009666BE /* JS_MenuTableHeaderView.xib in Resources */,
+				827D8D772193465F009666BE /* JS_MenuItemCell.xib in Resources */,
+				821B65552193053B00E03855 /* JS_MenuViewController.xib in Resources */,
+				827D8D9321947FBC009666BE /* WHQRViewController.xib in Resources */,
+				820A01A221920F6500C51CF7 /* LaunchScreen.storyboard in Resources */,
+				821B65512192F8FA00E03855 /* JS_HomeController.xib in Resources */,
+				820A019F21920F6500C51CF7 /* Assets.xcassets in Resources */,
+				820A019D21920F6400C51CF7 /* Main.storyboard in Resources */,
+				827D8D8D21945D92009666BE /* JS_MenuSelectedCell.xib in Resources */,
+				827D8D852193A351009666BE /* JS_SubMenuCell.xib in Resources */,
+				822DE5172192428400D6AE32 /* JS_HomeContentCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D06C58B302F1E15B469A292 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlovoSimulator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		992263300E71D0D7F1E28CAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GlovoSimulator/Pods-GlovoSimulator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GlovoSimulator/Pods-GlovoSimulator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		820A019021920F6400C51CF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827D8D842193A351009666BE /* JS_SubMenuCell.swift in Sources */,
+				827D8D7921934C8F009666BE /* JS_MenuTableHeaderView.swift in Sources */,
+				827D8D972194839D009666BE /* JS_WelcomeView.swift in Sources */,
+				822DE5212192E72A00D6AE32 /* JS_FooterView.swift in Sources */,
+				827D8D872193ACCE009666BE /* JS_SubMenuSection.swift in Sources */,
+				820A019A21920F6400C51CF7 /* ViewController.swift in Sources */,
+				822DE5132192394E00D6AE32 /* UIColor-Extension.swift in Sources */,
+				827D8D9221947FBC009666BE /* WHQRViewController.swift in Sources */,
+				827D8D7F21937C6A009666BE /* JS_SubMenuController.swift in Sources */,
+				827D8D9521948090009666BE /* QRClearImage.swift in Sources */,
+				822DE5162192428400D6AE32 /* JS_HomeContentCell.swift in Sources */,
+				821B65502192F8FA00E03855 /* JS_HomeController.swift in Sources */,
+				820A019821920F6400C51CF7 /* AppDelegate.swift in Sources */,
+				827D8D8C21945D92009666BE /* JS_MenuSelectedCell.swift in Sources */,
+				827D8D8121938122009666BE /* JS_SubMenuModel.swift in Sources */,
+				822DE51F2192E68D00D6AE32 /* JS_MenuViewController.swift in Sources */,
+				827D8D73219340E2009666BE /* JS_MenuModel.swift in Sources */,
+				822DE50D21921CC500D6AE32 /* Common.swift in Sources */,
+				827D8D752193444F009666BE /* JS_MenuItemCell.swift in Sources */,
+				822DE502219219CE00D6AE32 /* JS_BaseNavigationController.swift in Sources */,
+				822DE5192192CB4100D6AE32 /* JS_RestauranteModel.swift in Sources */,
+				821B655921931BD900E03855 /* JS_PresentAnimation.swift in Sources */,
+				827D8D7D21935233009666BE /* JS_SectionHeaderView.swift in Sources */,
+				827D8D8F21947F15009666BE /* QRCodeTool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		820A019B21920F6400C51CF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820A019C21920F6400C51CF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		820A01A021920F6500C51CF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820A01A121920F6500C51CF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		820A01A421920F6500C51CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		820A01A521920F6500C51CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		820A01A721920F6500C51CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D28E60952E7E7E40B8F4B58 /* Pods-GlovoSimulator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9FQ8LK3ZQ;
+				INFOPLIST_FILE = GlovoSimulator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JS-Coder.GlovoSimulator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		820A01A821920F6500C51CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E404F3DC798CED9718187E82 /* Pods-GlovoSimulator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9FQ8LK3ZQ;
+				INFOPLIST_FILE = GlovoSimulator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JS-Coder.GlovoSimulator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		820A018F21920F6400C51CF7 /* Build configuration list for PBXProject "GlovoSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820A01A421920F6500C51CF7 /* Debug */,
+				820A01A521920F6500C51CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820A01A621920F6500C51CF7 /* Build configuration list for PBXNativeTarget "GlovoSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820A01A721920F6500C51CF7 /* Debug */,
+				820A01A821920F6500C51CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 820A018C21920F6400C51CF7 /* Project object */;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ksN-07-FlT" customClass="JS_MenuTableHeaderView" customModule="GlovoSimulator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                    <rect key="frame" x="15" y="0.0" width="308" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subway" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPV-fo-vyT">
+                            <rect key="frame" x="121" y="10" width="66.5" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.90 E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntw-ED-aDs">
+                            <rect key="frame" x="10" y="51" width="43" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 - 30 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-j1-qEt">
+                            <rect key="frame" x="219" y="51" width="79" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los importantes mostrados son los correspondientes a los precios de delivery de Tierra Burrito" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHF-gc-25x">
+                            <rect key="frame" x="10" y="83.5" width="288" height="26.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gHF-gc-25x" secondAttribute="trailing" constant="10" id="07S-7a-atd"/>
+                        <constraint firstItem="yPV-fo-vyT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0sz-Bb-Mac"/>
+                        <constraint firstItem="yPV-fo-vyT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Hsd-Tf-aeu"/>
+                        <constraint firstItem="gHF-gc-25x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="J98-62-QRh"/>
+                        <constraint firstItem="ntw-ED-aDs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PQp-Zd-6mr"/>
+                        <constraint firstItem="ntw-ED-aDs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="a6L-mw-rvf"/>
+                        <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ghC-j1-qEt" secondAttribute="trailing" constant="10" id="lUG-l9-G5j"/>
+                        <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gHF-gc-25x" secondAttribute="bottom" constant="10" id="qN8-fC-27b"/>
+                        <constraint firstItem="ghC-j1-qEt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rgT-U3-tJ8"/>
+                        <constraint firstItem="gHF-gc-25x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wSq-dp-Aey"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="7eH-gh-EmE" secondAttribute="top" id="Cgc-1A-Ar1"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="7eH-gh-EmE" secondAttribute="trailing" constant="-15" id="RIT-ta-CMp"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="bottom" secondItem="7eH-gh-EmE" secondAttribute="bottom" id="jX5-QA-jHB"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="7eH-gh-EmE" secondAttribute="leading" constant="15" id="zXC-Zt-DNN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="7eH-gh-EmE"/>
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="oaR-2E-Enx"/>
+            </connections>
+            <point key="canvasLocation" x="-102" y="61"/>
+        </view>
+    </objects>
+</document>

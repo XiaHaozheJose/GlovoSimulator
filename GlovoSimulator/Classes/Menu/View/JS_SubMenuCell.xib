@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="JS_SubMenuCell" customModule="GlovoSimulator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP8-Mf-ITk">
+                        <rect key="frame" x="10" y="12.5" width="32" height="38.5"/>
+                        <state key="normal" image="PAcheckboxNotSelected"/>
+                        <state key="disabled" image="PAcheckboxDisabled"/>
+                        <state key="selected" image="PAcheckboxSelected"/>
+                        <connections>
+                            <action selector="selectButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xiq-78-x6c"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agua Mineral(50cl)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaP-Vi-b6E">
+                        <rect key="frame" x="47" y="12.5" width="145.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Us-vs-b7v">
+                        <rect key="frame" x="270" y="21.5" width="21" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpD-JC-CSn">
+                        <rect key="frame" x="296" y="17" width="30" height="30"/>
+                        <state key="normal" image="PAplus"/>
+                        <state key="disabled" image="PAplusDisabled"/>
+                        <connections>
+                            <action selector="plusButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aoj-Qi-FJd"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-vu-kan">
+                        <rect key="frame" x="235" y="17" width="30" height="30"/>
+                        <state key="normal" image="PAminus"/>
+                        <connections>
+                            <action selector="minusButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Umi-bp-ZRK"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 2.5 E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LO6-Hm-kDY">
+                        <rect key="frame" x="47" y="38" width="53.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.1960784314" green="0.92933968320000004" blue="0.75909674660000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kP8-Mf-ITk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="24N-7I-FuT"/>
+                    <constraint firstItem="IaP-Vi-b6E" firstAttribute="leading" secondItem="kP8-Mf-ITk" secondAttribute="trailing" constant="5" id="3qr-QS-WvE"/>
+                    <constraint firstItem="5Us-vs-b7v" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7xd-Zr-kA2"/>
+                    <constraint firstItem="lpD-JC-CSn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SUn-5Y-G5k"/>
+                    <constraint firstItem="wBg-vu-kan" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ead-z2-Hgi"/>
+                    <constraint firstItem="LO6-Hm-kDY" firstAttribute="top" secondItem="IaP-Vi-b6E" secondAttribute="bottom" constant="5" id="h9Z-Vi-21w"/>
+                    <constraint firstItem="kP8-Mf-ITk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iuh-k2-QVu"/>
+                    <constraint firstItem="5Us-vs-b7v" firstAttribute="leading" secondItem="wBg-vu-kan" secondAttribute="trailing" constant="5" id="k4L-81-zNu"/>
+                    <constraint firstItem="LO6-Hm-kDY" firstAttribute="leading" secondItem="IaP-Vi-b6E" secondAttribute="leading" id="maY-K7-iZe"/>
+                    <constraint firstItem="wBg-vu-kan" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IaP-Vi-b6E" secondAttribute="trailing" constant="5" id="n8K-mo-v8R"/>
+                    <constraint firstItem="lpD-JC-CSn" firstAttribute="leading" secondItem="5Us-vs-b7v" secondAttribute="trailing" constant="5" id="nLq-DR-7FO"/>
+                    <constraint firstAttribute="trailing" secondItem="lpD-JC-CSn" secondAttribute="trailing" constant="10" id="qBj-vN-SBe"/>
+                    <constraint firstAttribute="bottom" secondItem="LO6-Hm-kDY" secondAttribute="bottom" constant="5" id="tJv-H9-Bnp"/>
+                    <constraint firstItem="IaP-Vi-b6E" firstAttribute="top" secondItem="kP8-Mf-ITk" secondAttribute="top" id="v65-4T-lCt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countLabel" destination="5Us-vs-b7v" id="I7b-i0-NOK"/>
+                <outlet property="minusButton" destination="wBg-vu-kan" id="Sar-qP-ljS"/>
+                <outlet property="nameLabel" destination="IaP-Vi-b6E" id="qJ3-Ha-YU9"/>
+                <outlet property="plusButton" destination="lpD-JC-CSn" id="gCe-59-ccM"/>
+                <outlet property="priceLabel" destination="LO6-Hm-kDY" id="Whp-tC-XX2"/>
+                <outlet property="selectButton" destination="kP8-Mf-ITk" id="EJ9-At-pvd"/>
+            </connections>
+            <point key="canvasLocation" x="65.599999999999994" y="48.575712143928037"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PAcheckboxDisabled" width="32" height="32"/>
+        <image name="PAcheckboxNotSelected" width="32" height="32"/>
+        <image name="PAcheckboxSelected" width="32" height="32"/>
+        <image name="PAminus" width="30" height="30"/>
+        <image name="PAplus" width="30" height="30"/>
+        <image name="PAplusDisabled" width="30" height="30"/>
+    </resources>
+</document>

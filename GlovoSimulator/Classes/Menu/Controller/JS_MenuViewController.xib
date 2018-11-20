@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JS_MenuViewController" customModule="GlovoSimulator" customModuleProvider="target">
+            <connections>
+                <outlet property="heightImageConstraint" destination="Ad8-3R-u4r" id="hfe-na-y03"/>
+                <outlet property="menuImageView" destination="MxF-zc-Npe" id="S7R-4t-ymF"/>
+                <outlet property="menuTableView" destination="Tdo-tP-SOn" id="saW-MH-zUo"/>
+                <outlet property="view" destination="bZR-Xj-z3U" id="Ct1-6s-Yk2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bZR-Xj-z3U">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Tdo-tP-SOn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="MxF-zc-Npe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="Ad8-3R-u4r"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DpO-p4-0UZ" firstAttribute="bottom" secondItem="Tdo-tP-SOn" secondAttribute="bottom" id="SbK-hL-7vH"/>
+                <constraint firstItem="MxF-zc-Npe" firstAttribute="leading" secondItem="DpO-p4-0UZ" secondAttribute="leading" id="Wrv-CS-sQu"/>
+                <constraint firstItem="Tdo-tP-SOn" firstAttribute="leading" secondItem="DpO-p4-0UZ" secondAttribute="leading" id="ZV3-xJ-A9e"/>
+                <constraint firstItem="DpO-p4-0UZ" firstAttribute="trailing" secondItem="Tdo-tP-SOn" secondAttribute="trailing" id="j7c-CD-VKN"/>
+                <constraint firstItem="DpO-p4-0UZ" firstAttribute="trailing" secondItem="MxF-zc-Npe" secondAttribute="trailing" id="jMa-mL-Zo4"/>
+                <constraint firstItem="MxF-zc-Npe" firstAttribute="top" secondItem="bZR-Xj-z3U" secondAttribute="top" id="qpv-XP-14g"/>
+                <constraint firstItem="Tdo-tP-SOn" firstAttribute="top" secondItem="bZR-Xj-z3U" secondAttribute="top" id="zBf-bp-QHx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DpO-p4-0UZ"/>
+            <point key="canvasLocation" x="-68" y="-1110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="burger" width="1260" height="709"/>
+    </resources>
+</document>
